@@ -39,8 +39,8 @@ jobs:
       - name: Dependencies installieren
         run: bun install --frozen-lockfile
 
-      - name: ESLint
-        run: bun run lint
+      - name: Biome
+        run: bun run check
 
       - name: TypeScript prüfen
         run: bunx tsc --noEmit
